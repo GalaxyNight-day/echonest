@@ -1,6 +1,6 @@
 import os
 from pyechonest import config
-config.ECHO_NEST_API_KEY="NGUUJCPVC61WKHRKN"
+
 import datetime
 
 import urllib
@@ -14,7 +14,6 @@ from pandas import read_html
 from pandas import read_csv
 from StringIO import StringIO
 import requests
-url='https://docs.google.com/spreadsheet/pub?key=0AphHrqy-sY9gdE9RalNhR0FEb1RMMkp5cWRadkVwVEE&output=csv'
 r=requests.get(url)
 data = r.content
 df = read_csv(StringIO(data))
